@@ -1,0 +1,64 @@
+.admin-post-list {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  }
+  
+  .admin-post-list h2 {
+    color: #333;
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+  }
+  
+  .admin-post-list table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .admin-post-list th,
+  .admin-post-list td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .admin-post-list th {
+    background-color: #f8f9fa;
+    color: #666;
+    font-weight: 500;
+  }
+  
+  .actions {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .edit-button {
+    background: #00529b;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+  }
+  
+  .delete-button {
+    background: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+  }
+  
+  .edit-button:hover,
+  .delete-button:hover {
+    opacity: 0.9;
+  }
+  
+  tr:hover td {
+    background-color: #f8fafc;
+  }

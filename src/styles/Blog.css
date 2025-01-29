@@ -1,0 +1,33 @@
+/* Blog Page Styles */
+.blog-page {
+    padding-top: 80px; /* Offset for fixed navbar */
+  }
+  
+  .blog-hero {
+    background: linear-gradient(rgba(0, 82, 155, 0.8), rgba(0, 82, 155, 0.8)),
+                url('https://images.unsplash.com/photo-1523240795612-9a054b0db644') center/cover;
+    padding: 4rem 2rem;
+    text-align: center;
+    color: white;
+  }
+  
+  .blog-hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .blog-hero h1 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .blog-hero p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+  }
+  
+  .blog-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }

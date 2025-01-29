@@ -1,0 +1,118 @@
+/* Post Grid Styles */
+.post-grid {
+    display: grid;
+    gap: 2rem;
+    padding: 2rem 0;
+  }
+  
+  /* Featured Post */
+  .featured-post {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    overflow: hidden;
+  }
+  
+  .post-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .post-content {
+    padding: 2rem;
+  }
+  
+  /* Regular Posts */
+  .post-card {
+    background: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+  }
+  
+  .post-card:hover {
+    transform: translateY(-3px);
+  }
+  
+  /* Post Elements */
+  .post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .post-category {
+    background: #e8f4ff;
+    color: #00529b;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-weight: 500;
+  }
+  
+  .post-category.highlight {
+    background: #ff6b6b;
+    color: white;
+  }
+  
+  .post-date {
+    color: #666;
+  }
+  
+  .post-title {
+    color: #333;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+  }
+  
+  .post-excerpt {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+  
+  .read-more-button {
+    background: none;
+    border: 2px solid #00529b;
+    color: #00529b;
+    padding: 0.5rem 1.5rem;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .read-more-button:hover {
+    background: #00529b;
+    color: white;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .featured-post {
+      grid-template-columns: 1fr;
+    }
+    
+    .post-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .blog-hero h1 {
+      font-size: 2rem;
+    }
+  }
+  
+  @media (min-width: 769px) {
+    .post-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .featured-post {
+      grid-column: span 2;
+    }
+  }
