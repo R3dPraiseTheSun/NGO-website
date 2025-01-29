@@ -15,7 +15,7 @@ const PostList = () => {
     useEffect(() => {
         const fetchPosts = async () => {
             try {
-                const response = await axios.get('/api/posts');
+                const response = await axios.get('https://ngo-backend-wh0k.onrender.com/api/posts');
                 let allPosts = response.data;
 
                 if (!Array.isArray(allPosts)) {
